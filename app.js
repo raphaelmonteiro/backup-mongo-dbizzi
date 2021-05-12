@@ -1,5 +1,5 @@
 // mongoresotre --db=izzi --archive=./ozzo.gzip --gzip
-require('dotenv').config()
+require('dotenv').config();
 const path = require('path');
 const cron = require('node-cron');
 const backupMongoDB = require('./src/services/mongoDump.services');
