@@ -6,4 +6,4 @@ const backupMongoDB = require('./src/services/mongoDump.services');
 
 const ARCHIVE_PATH = path.join(__dirname, 'public', `${process.env.DB_DATABASE}.gzip`);
 
-cron.schedule('0 */8 * * *', () => backupMongoDB(ARCHIVE_PATH));
+cron.schedule('0 8 * * *', () => backupMongoDB(ARCHIVE_PATH));
