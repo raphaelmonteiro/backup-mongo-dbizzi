@@ -37,7 +37,7 @@ module.exports = (ARCHIVE_PATH) => {
         else {
             mailer.sendMail(
                 {
-                    to: 'raphael.hexa@gmail.com',
+                    to: 'arthur@izzigaming.com.br',
                     from: process.env.EMAIL_USERNAME,
                     subject: `IZZI - BACKUP DIARIO REALIZADO`,
                     template: 'backup_diario',
